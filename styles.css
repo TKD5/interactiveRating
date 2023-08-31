@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rating-card {
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 2rem;
+    background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%) );
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+
+ .top-image img{
+    background-color: hsl(213, 15%, 24%);
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+
+.title {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    padding-left: 1.5rem;
+}
+
+.text {
+    color: hsl(217, 12%, 63%);
+    max-width: 350px;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    padding-left: 1.5rem;
+}
+
+.rating-score {
+    display: flex;
+    justify-content: space-evenly;
+    color:  hsl(217, 12%, 63%);
+
+}
+
+.rating-score p {
+    background-color: hsl(213, 19%, 18%);
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+
+.rating-score p:hover {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+    box-shadow:2px 2px 25px hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+/* .rating-score p:active {
+    background-color: hsl(25, 97%, 53%);
+} */
+
+.submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.submit-btn button {
+    padding: 1rem;
+    width: 95%;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit-btn button:hover {
+    box-shadow: 2px 2px 25px hsl(25, 97%, 53%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.submit-btn button:active {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+/* Thank you card Styles */
+
+.thank-you-card {
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 2rem;
+    background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%) );
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+
+.thank-you-image {
+    text-align: center;
+    margin-bottom: 2rem;   
+}
+
+.selected p{
+    margin-top: 3rem;
+    color:hsl(25, 97%, 53%);
+    width: 50%;
+    margin: 0 auto;
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.thank-you-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 22px;
+}
+
+.thank-you-text {
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    width: 300px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    background-color: hsl(217, 12%, 63%);
+    z-index: 1;
+}
+
+.attribution { 
+    font-size: 16px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    margin-top: 1rem;
+   }
+   
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media only screen and (max-width: 376px) {
+    .rating-card, .thank-you-card {
+        max-width: 350px;
+    }
+
+    .rating-score p {
+        margin: 5px;
+        
+    }
+    .attribution {
+        margin: auto 30px;
+        line-height: 25px;
+    }
+}
